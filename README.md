@@ -1,101 +1,97 @@
-# Stock-Inventory-Management-System
-# 📦 Stock Inventory Management System
-
-## 📌 Project Overview
-
-The **Stock Inventory Management System** is a .NET-based desktop application developed to efficiently manage product inventory, track stock levels, monitor inventory transactions, and integrate quotations and invoices.
-This system helps businesses maintain accurate stock records and reduce manual inventory management errors.
+# 📦 Stock Inventory Management System (.NET)
 
 ---
 
-## 🎯 Business Objective
+## 📌 Project Overview
 
-To develop an inventory management system that enables:
+The **Stock Inventory Management System** is a .NET-based application designed to manage product inventory efficiently by tracking stock levels, inventory transactions, and warehouse information.
 
-* Product tracking
+This system helps businesses maintain accurate inventory records and automate stock monitoring processes.
+
+---
+
+## 🎯 Objective
+
+To develop an Inventory Management System that allows:
+
+* Product management
 * Stock level monitoring
-* Inventory transaction management
-* Integration with quotations and invoices
+* Inventory transaction tracking
+* Warehouse management
+* Database integration using Entity Framework
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology              | Description                  |
-| ----------------------- | ---------------------------- |
-| .NET (C#)               | Application Development      |
-| Entity Framework        | ORM for Database Integration |
-| MySQL / SQL Server      | Database Management          |
-| Visual Studio 2022/2026 | Development IDE              |
+| Technology              | Description             |
+| ----------------------- | ----------------------- |
+| C# (.NET)               | Application Development |
+| Entity Framework Core   | ORM                     |
+| MySQL / SQL Server      | Database                |
+| Visual Studio 2022/2026 | IDE                     |
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-### 📂 Product Catalog Management
-
-* Add new products
-* Update product details
-* Categorize products
-* Maintain SKU, Name, Description, Category, Unit
-
-### 📊 Stock Management
-
-* Monitor stock levels
-* Track stock availability
-* Update stock quantities
-
-### 📈 Inventory Transactions
-
-* Record stock-in and stock-out
-* Track inventory movement
-* Maintain transaction history
-
-### 🧾 Quotation & Invoice Integration
-
-* Generate quotations
-* Generate invoices
-* Maintain billing records
+* Product Management
+* Warehouse Management
+* Stock Level Tracking
+* Stock In / Stock Out Transactions
+* Inventory Movement Tracking
+* Database Integration
 
 ---
 
 ## 📁 Project Structure
 
 ```
-InventoryManagementSystem/
+Project/
 │
-├── ConsoleApp1/
-│   ├── Program.cs
-│   ├── DelegateDemo.cs
-│   ├── EventHandler_exp.cs
-│   └── Assignment.cs
+├── Data/
+│   └── InventoryContext.cs
 │
 ├── Database/
 │   └── InventoryDB.sql
 │
-├── InventoryManagementSystem.csproj
-├── InventoryManagementSystem.sln
-└── .gitignore
+├── Models/
+│   ├── Product.cs
+│   ├── StockLevel.cs
+│   ├── StockTransaction.cs
+│   └── Warehouse.cs
+│
+├── Program.cs
+├── .gitignore
+└── README.md
 ```
 
 ---
 
 ## 🗄️ Database Setup
 
-1. Open your MySQL / SQL Server
-2. Create a new database:
+### Step 1: Create Database
+
+Run the following query in MySQL / SQL Server:
 
 ```sql
 CREATE DATABASE InventoryDB;
 ```
 
-3. Run the script:
+### Step 2: Execute Database Script
+
+Run:
 
 ```
 Database/InventoryDB.sql
 ```
 
-This will create all necessary tables required for the system.
+This will create:
+
+* Product Table
+* Warehouse Table
+* StockLevel Table
+* StockTransaction Table
 
 ---
 
@@ -107,24 +103,24 @@ This will create all necessary tables required for the system.
 git clone https://github.com/OmSwami04/Stock-Inventory-Management-System.git
 ```
 
-### Step 2: Open in Visual Studio
+### Step 2: Open Project
 
-* Open `.sln` file
-* Build the solution
+* Open `.sln` file in Visual Studio
 
-### Step 3: Run Application
+### Step 3: Build Solution
 
-* Press **Ctrl + F5** to run the project
+Press:
 
----
+```
+Ctrl + Shift + B
+```
 
-## 📌 Git Workflow Used
+### Step 4: Run Application
 
-```bash
-git add .
-git commit -m "Commit Message"
-git pull --rebase origin main
-git push
+Press:
+
+```
+Ctrl + F5
 ```
 
 ---
@@ -133,9 +129,9 @@ git push
 
 * Barcode Integration
 * QR Code-Based Billing
-* Expiry Alerts
-* Low Stock Notifications
-* Dashboard Analytics
+* Low Stock Alerts
+* Expiry Notifications
+* Dashboard Reports
 
 ---
 
@@ -143,8 +139,9 @@ git push
 
 **Om Swami**
 
+
 ---
 
 ## 📄 License
 
-This project is developed for educational and academic purposes.
+This project is for educational purposes only.
