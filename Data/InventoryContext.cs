@@ -14,7 +14,7 @@ namespace InventoryManagementSystem.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySql(
-                "server=localhost;database=InventoryDB;user=root;password=Swamiom11@",
+                "server=localhost;database=InventoryDB;user=root;password=passDB",
                 new MySqlServerVersion(new Version(8, 0, 36))
             );
         }
